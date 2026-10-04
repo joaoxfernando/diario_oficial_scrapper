@@ -73,11 +73,10 @@ def consultar_diario_oficial(termo_busca, dias_limite):
 
 if __name__ == "__main__":
     load_dotenv()
-    MEU_PROTOCOLO = os.getenv("MEU_PROTOCOLO")
-    MEU_NOME = os.getenv("MEU_NOME")
+    MEU_TERMO = os.getenv("MEU_TERMO")
 
-    if not MEU_NOME:
-        print('Erro: A variável "MEU_NOME" não foi encontrada!')
+    if not MEU_TERMO:
+        print('Erro: A variável "MEU_TERMO" não foi encontrada!')
         sys.exit(1)
 
         dias_filtro = 5
@@ -90,4 +89,4 @@ if __name__ == "__main__":
 
     print(f'Iniciando a busca para o termo informado. Filtrando publicações dos últimos {dias_filtro} dias...')
 
-    consultar_diario_oficial(MEU_NOME, dias_limite=dias_filtro)
+    consultar_diario_oficial(MEU_TERMO, dias_limite=dias_filtro)
