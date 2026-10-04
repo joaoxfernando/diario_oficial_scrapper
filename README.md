@@ -2,7 +2,17 @@
 
 Criei esse scrapper pois estou aguardando um retorno de uma restituição de um órgão público e a melhor forma de saber em primeira mão sobre as atualizações, além dos e-mails e consultando os devidos sites do órgão, é via Diário Oficial.
 
-A busca é simples, rode o programa com o comando:
+Antes de rodar a primeira vez, cetifique-se que tenha todos as bibliotecas instaladas rodando o comando:
+```bash
+pip install -r requirements.txt
+```
+
+Se o comando acima não funcionar, rode da forma abaixo:
+```bash
+python -m pip install -r requirements.txt
+```
+
+Depois, para começar a usá-lo é simples, rode o programa com o comando:
 ```bash
 python main.py <dias> 
 ```
